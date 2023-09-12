@@ -1,0 +1,45 @@
+{
+  "name": "PartidoLibertario",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@undecaf/vue-barcode-scanner": "^0.9.3",
+    "axios": "^0.21.1",
+    "bootstrap-vue": "^2.23.1",
+    "core-js": "^3.6.5",
+    "moment": "^2.29.1",
+    "numeral": "^2.0.6",
+    "register-service-worker": "^1.7.1",
+    "vue": "^2.6.11",
+    "vue-advanced-cropper": "^1.11.6",
+    "vue-animate-onscroll": "^1.0.8",
+    "vue-axios": "^3.2.5",
+    "vue-carousel": "^0.18.0",
+    "vue-infinite-scroll": "^2.0.2",
+    "vue-load-image": "^0.2.0",
+    "vue-router": "^3.2.0",
+    "vue-screen-size": "^1.0.1",
+    "vue-toast-notification": "^0.6.2",
+    "vue2-editor": "^2.10.3",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
