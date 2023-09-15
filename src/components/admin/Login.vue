@@ -60,15 +60,14 @@ export default {
 	methods: {
 		login() {
 			if (this.check()) {
-				// this.$store.dispatch('auth/csrf')
-				// .then(() => {
-					this.$store.dispatch('auth/login', this.form)
-					.then(() => {
-						if (!this.authenticated) {
-							this.$toast.error('Revise sus datos')
-						}
-					})
-				// })
+				this.$store.dispatch('auth/login', this.form)
+				.then(() => {
+					// setTimeout(() => {
+					// 	if (!this.authenticated) {
+					// 		this.$toast.error('Revise sus datos')
+					// 	}
+					// }, 1000)
+				})
 			}
 		},
 		check() {

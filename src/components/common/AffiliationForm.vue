@@ -1,12 +1,14 @@
 <template>
 	<div
 	class="afiliation-form shadow-2 b-r-1">
-		<h3>
+		<h3
+		class="text-center">
 			<strong>
 				DEJANOS TUS DATOS
 			</strong>
 		</h3>
-		<p>
+		<p
+		class="text-center">
 			Un referente de tu zona se contactará para que firmes tu afiliación.
 		</p>
 		<b-form-group

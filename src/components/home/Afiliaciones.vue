@@ -15,6 +15,11 @@
 				Con tu afiliación vamos a poder ser una opción genuina en las elecciones, para enfrentar a la casta política que vive sin ajustes. TENEMOS QUE SER LA OPCIÓN QUE AJUSTE A LA CLASE POLITICA
 			</p>
 			<div class="j-center">
+				<div class="cont-img">
+					<img src="@/assets/logo.png">
+				</div>
+			</div>			
+			<div class="j-center">
 				<b-button
 				v-animate-onscroll="'animated rubberBand'"
 				:to="{name: 'Collaborate'}">
@@ -41,6 +46,18 @@
 		font-size: 20px
 		font-weight: 300
 		text-align: center
+	.cont-img 
+		width: 300px
+		height: 300px
+		background: #FFF
+		display: flex 
+		justify-content: center 
+		align-items: center
+		border-radius: 50%
+		margin-top: 15px
+
+		img 
+			width: 220px 
 	.btn 
 		margin: 70px 0
 		font-size: 1.4em

@@ -1,5 +1,7 @@
 <template>
-	<div class="other-blogs">
+	<div 
+	v-if="other_blogs.length"
+	class="other-blogs">
 		<hr>
 		<h3>
 			Otras publicaciones

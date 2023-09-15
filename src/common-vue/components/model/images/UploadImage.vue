@@ -80,9 +80,8 @@ export default {
 		},
 		updateModelImage(image_url, image_model) {
 			if (this.prop.type == 'image') {
-				let prop_key = this.prop.key
-				this.model = Object.assign({}, this.model, { prop_key: image_url })
-				console.log(this.model)
+				this.model[this.prop.key] = image_url
+				this.setModel(this.model, this.model_name)
 			} else {
 				this.model[this.prop.key].push(image_model)
 			}

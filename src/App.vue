@@ -19,6 +19,7 @@ export default {
     created() {
         this.$store.dispatch('auth/csrf')
         this.$store.dispatch('departament/getModels')
+        this.$store.dispatch('affiliate/getModels')
     }
 }
 </script>

@@ -8,7 +8,8 @@
 				<i class="icon-clock"></i>
 				{{ since(selected_blog.created_at) }}
 			</p>
-			<p>
+			<p
+			v-if="selected_blog.read_time">
 				<i class="icon-book"></i>
 				{{ selected_blog.read_time }} minutos de lectura
 			</p>

@@ -2,7 +2,7 @@
 	<div
 	class="nav-history"
 	v-if="selected_blog">
-		<i class="icon-home"></i>
+		<i class="icon-home p-r-10"></i>
 		<router-link :to="{name: 'Home'}">Inicio</router-link> / <router-link :to="{name: 'Blogs'}">Blogs</router-link> / <span>{{ selected_blog.title }}</span>
 	</div>
 </template>

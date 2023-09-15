@@ -3,13 +3,18 @@ export default {
 		{
 			text: 'Titulo',
 			key: 'title',
-			type: 'text',
+			type: 'textarea',
 		},
 		{
 			text: 'Imagen',
 			key: 'image_url',
 			type: 'image',
 			not_cropp: true,
+		},
+		{
+			text: 'Minutos de lectura',
+			key: 'read_time',
+			type: 'text',
 		},
 		{
 			text: 'Contenido',

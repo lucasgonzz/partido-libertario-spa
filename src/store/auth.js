@@ -40,7 +40,7 @@ export default {
 				console.log(err)
 			})
 		},
-		login({ commit }, user) {
+		login({ commit, state }, user) {
 			commit('setLoading', true)
 			return axios.post('/login', user)
 			.then(res => {
@@ -48,6 +48,8 @@ export default {
 				if (res.status == 200) {
 					commit('setAuthenticated', true)
 					commit('setUser', res.data.user)
+					console.log('state.authenticated')
+					console.log(state.authenticated)
 				} 
 			})
 			.catch(err => {

@@ -5,10 +5,13 @@
         cols="12"
         md="6"
         lg="4">
-               <h3>MUCHAS GRACIAS</h3>
-               <p>En breve te contactaremos para terminar tu Afiliación</p>  
+               <h3
+               class="text-center">MUCHAS GRACIAS</h3>
+               <p
+               class="text-center">En breve te contactaremos para terminar tu Afiliación</p>  
                <div class="d-grid">
                    <b-button
+                   block
                    :to="{name: 'Home'}"
                    variant="success">
                         <i class="icon-back"></i>

@@ -2,9 +2,26 @@
 	<div 
 	v-if="blog"
 	class="blog">
-		<img 
+		<vue-load-image>
+			<img
+			slot="image"
+			:src="blog.image_url">
+
+	        <b-spinner
+			slot="preloader"
+	        variant="success"></b-spinner>
+
+			<div slot="error">
+				<p
+				class="m-b-0">
+					Imagen no encontrada
+				</p>
+			</div>
+		</vue-load-image>
+
+		<!-- <img 
 		slot="image"
-		:src="blog.image_url" alt="">
+		:src="blog.image_url" alt=""> -->
 
 		<div class="content">
 			<div class="info">
@@ -36,10 +53,14 @@
 <script>
 import blog from '@/mixins/blog'
 import VueScreenSize from 'vue-screen-size'
+import VueLoadImage from 'vue-load-image'
 export default {
 	mixins: [blog, VueScreenSize.VueScreenSizeMixin],
 	props: {
 		blog: Object,
+	},
+	components: {
+		VueLoadImage,
 	},
 	computed: {
 		content() {
@@ -87,12 +108,16 @@ export default {
 
 	
 	img
+		width: 100%
+		margin-right: 15px
+	.vue-load-image
 		@media screen and (max-width: 768px)
-			width: 100%
-			margin-bottom: 10px
+			// width: 100%
+			margin-bottom: 15px
 		@media screen and (min-width: 768px)
-			width: 40%
+			// width: 40%
 			margin-right: 15px
+	
 
 	.content
 		height: 100%

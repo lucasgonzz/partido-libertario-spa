@@ -98,3 +98,6 @@
 .icon-instagram:before {
   content: "\75";
 }
+.icon-home:before {
+  content: "\69";
+}
