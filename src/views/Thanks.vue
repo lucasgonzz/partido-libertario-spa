@@ -12,7 +12,7 @@
                <div class="d-grid">
                    <b-button
                    block
-                   :to="{name: 'Home'}"
+                   :to="{name: 'Home', params: {view: 'ultimos-ingresados'}}"
                    variant="success">
                         <i class="icon-back"></i>
                        Regresar 
